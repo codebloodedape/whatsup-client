@@ -1,0 +1,28 @@
+h1 {
+    white-space: pre;
+}
+
+.location {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.location:hover, .location:focus-within {
+    background-color: #e91e85;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.location-input-field-container {
+    width: 0;
+    overflow: hidden;
+}
+
+.location-input-field {
+    position: absolute;
+    opacity:0;
+}

@@ -1,0 +1,9 @@
+<div class="location" (click)="locationTextSelected()">
+    <h1>{{ locationDisplayText }}</h1>
+    <div class="location-input-field-container">
+        <input type="text" class="location-input-field"
+        value="{{location}}"
+        (keyup)="onlocationInputFieldTextChange($event)"
+        (focusout)="updateLocationIfEmpty()" #locationInputField />
+    </div>
+</div>
