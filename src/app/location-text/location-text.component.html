@@ -4,6 +4,13 @@
         <input type="text" class="location-input-field"
         value="{{location}}"
         (keyup)="onlocationInputFieldTextChange($event)"
-        (focusout)="updateLocationIfEmpty()" #locationInputField />
+        (focusout)="onlocationInputFieldTextFocusOut()" #locationInputField />
     </div>
 </div>
+
+<ul *ngIf="locationSuggestions.length > 0 && locationTextFieldSelected" class="suggestion-container">
+    <li class="suggestion-item" *ngFor="let locationSuggestion of locationSuggestions"
+    (click)="placeSelected(locationSuggestion)" >
+        {{locationSuggestion.name}}
+    </li>
+</ul>

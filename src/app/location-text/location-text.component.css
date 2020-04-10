@@ -26,3 +26,23 @@ h1 {
     position: absolute;
     opacity:0;
 }
+
+.suggestion-container {
+    width: fit-content;
+    margin: 10px auto;
+    list-style: none;
+    padding: 10px;
+    background-color: #e91e85;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.suggestion-item {
+    margin: 10px 1px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #E91E63;
+    border-bottom-style: solid;
+}
